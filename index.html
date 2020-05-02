@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+	<head>
+		<title>The Cookbook Prototype</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="TheCookBook">
+	</head>
+	<body>
+		<div class="cookbook__background">
+			<div id="homepage__layer" >
+    		<div class="cookbook__title"> The &#9813;<br> Cook Book </div>
+				<div class="cookbook__symbol" >	&#127859; &#128214;	&#128298;</div>
+				<div class="cookbook__button" onclick="show__recipes()">Recipes</div>
+				<div class="cookbook__button" onclick="show__techniques()">Techniques</div>
+
+				<div class="cookbook__button">
+					<a href="#popup1">Version info</a>
+				</div>
+
+
+
+				<div id="popup1" class="overlay">
+					<a class="popup_out_close" href="#"></a>
+					<div class="popup">
+						<h2>Version: Functional prototype (Beta 1.0)</h2>
+						<a class="close" href="#">&times;</a>
+						<div class="content">
+							<p> <a href = "https://github.com/ABonoboCoding/group_21_cookbook_with_functionality" target = "_blank" class="popuplink"> Click me </a> to go to <b> THIS </b> version's GitHub repository</p>
+
+							<h3> Previous version (Alpha 1.0)</h3>
+							<p>Navigation Skeleton: <a href ="https://abonobocoding.github.io/group21_cookbook_prototype/index.html" class="popuplink"> Here </a></p>
+							<p> <a href = "https://github.com/ABonoboCoding/group21_cookbook_prototype" target = "_blank" class="popuplink"> Click me </a> to go to <b> PREVIOUS </b> version's GitHub repository</p>
+
+
+						</div>
+					</div>
+				</div>
+
+				<div class="cookbook__setting" >&#9881;</div>
+			</div>
+
+			<div id="recipes__layer">
+				<div class="gohome__button" onclick="show__homepage()">&#127968;</div>
+				<h1>Recipes&#128214;</h1>
+				<div class="recipes__card">
+					<div class="recipes__card__img">
+						<img src="images/friedbeef.png" alt="friedbeef">
+					</div>
+					<div class="recipes__card__content">
+						<div>Fried beef with onion</div>
+						<div class="recipes__button" onclick="show__materials()">Materials</div>
+						<div class="recipes__button" onclick="show__start()">Start</div>
+					</div>
+				</div>
+				<div class="recipes__card">
+					<div class="recipes__card__img">blank
+					</div>
+					<div class="recipes__card__content">blank
+					</div>
+				</div>
+			</div>
+
+			<!--Show all items in techniques part-->
+			<div id="techniques__layer">
+				<div class="gohome__button" onclick="show__homepage()">&#127968;</div>
+				<h1>Techniques</h1>
+				<div class="techniques_card">
+					<div class="techniques_button" onclick="show_techiques_item1()">Cutting</div>
+					<div class="techniques_button" onclick="">Steaming</div>
+				</div>
+			</div>
+			<!--show the page of each item in techniques-->
+			<!--Only one item showed-->
+			<div id="techniques_item1">
+				<div class="gohome__button" onclick="show__homepage()">&#127968;</div>
+				<h1>Cutting</h1>
+				<div class="techiniques_content">
+					<h3>Chop</h3>
+					<p>Chopping is probably the most used and "informal," if you will, of the techniques. It refers to cutting food into small, irregular pieces. Most recipes will specify what size pieces are required, with coarse (3/4") and fine (1/4") chop being common. If no number is given, go with 1/2" pieces.</p>
+					<h3>Dice</h3>
+					<p>Unlike a chop, a dice refers to cutting food into small uniform or dice-like pieces, ranging from 1/8" - 1/2". With dicing comes some waste, since you'll need to cut the vegetable or fruit into a block shape, but the extra pieces can be reused for stock or other dishes. One you have your block formed, slice the blocks into strips in the desired thickness and then cut again into smaller pieces to create cubes.</p>
+				</div>
+				<div class="return__button" onclick="show__techniques()">&#8678;</div>
+			</div>
+
+			<!-- function needs to be added
+			<div id="techniques_item2">
+				<div class="gohome__button" onclick="show__homepage()">&#127968;</div>
+				<h1>Steaming</h1>
+				<div class="techiniques_content">
+					<p>Chopping is probably the most used and "informal," if you will, of the techniques. It refers to cutting food into small, irregular pieces.</p>
+				</div>
+			</div>
+			-->
+
+			<!--Only one recipe's material page showed-->
+			<div id="materials__recipe1">
+				<h1>Fried beef with onion</h1>
+				<h2>Materials:</h2>
+				<ul>
+					<li>Steak: 30g</li>
+					<li>Onion: 2</li>
+					<li>Vegetable oil</li>
+					<li>Salt</li>
+					<li>Suger</li>
+					<li>Pepper</li>
+					<li>Vegetable oil</li>
+				</ul>
+				<h2>Utensils:</h2>
+				<ul>
+					<li>Chopping knife</li>
+					<li>Chopping board</li>
+					<li>Pan (flat)</li>
+				</ul>
+				<div class="return__button" onclick="show__recipes()">&#8678;</div>
+				<div class="change__section__button" onclick="show__start()">&#8680;</div>
+			</div>
+
+
+			<!-- function needs to be added
+			<div id="materials__recipe2">
+			</div>
+			-->
+
+
+			<!--Start page for recipe 1-->
+			<div id="start__recipe1">
+				<h1>Fried beef with onion</h1>
+				<h2>Step 1:</h2>
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					In egestas vehicula tellus, eget luctus ipsum posuere non.
+				</div>
+				<div>Etiam sem quam, lobortis eget auctor vel, ultrices ac ipsum.
+				Sed in volutpat lectus.
+				</div>
+				<br>
+				<div>Demo:</div>
+				<div class="start__demo">
+					<div class="start_demo_button">
+						<INPUT TYPE="button" value='pic' onclick="pic_layer()" class="start_demo_button_card">
+						<INPUT TYPE="button" value='gif' onclick="gif_layer()" class="start_demo_button_card">
+						<INPUT TYPE="button" value='vid' onclick="vid_layer()" class="start_demo_button_card">
+						<INPUT TYPE="button" value='close' id="close_all_button" onclick="close_all()" class="close_demo_button_card">
+					</div>
+					<br>
+					<div class="pic_gif_vid_show">
+						<div class="pic_show">
+							<img src="images/cut_fish.PNG" id="pic_window" style='display:none' width=95% alt="cut_fish.PNG">
+						</div>
+						<div class="gif_show">
+							<img src="images/cut_fish_gif.gif" id="gif_window" style='display:none' width=95% alt="cut_fish_gif.gif">
+						</div>
+						<div class="vid_show">
+							<video width=95% controls id="vid_window" style='display:none'>
+								<source src="images/cut_fish_video.mp4" type="video/mp4">
+								<source src="images/cut_fish_video.mp4.ogg" type="video/ogg">
+								<source src="images/cut_fish_video.mp4.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+				</div>
+
+				<div class="return__button" onclick="show__materials()">&#8678;</div>
+			</div>
+
+
+		</div>
+    <script src="js/js.js"></script>
+  </body>
+</html>
