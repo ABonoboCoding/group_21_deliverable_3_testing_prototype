@@ -47,10 +47,10 @@
 				<h1>Recipes&#128214;</h1>
 				<div class="recipes__card">
 					<div class="recipes__card__img">
-						<img src="images/friedbeef.png" alt="friedbeef">
+						<img height="100%"src="images/Spicy Fried Fish.png" alt="friedbeef">
 					</div>
 					<div class="recipes__card__content">
-						<div>Fried beef with onion</div>
+						<div>Spicy Fried Fish</div>
 						<div class="recipes__button" onclick="show__materials1()">Materials</div>
 						<div class="recipes__button" onclick="show__start1()">Start</div>
 					</div>
@@ -60,15 +60,19 @@
 						<img src="images/broccolisalad.png" alt="broccolisalad">
 					</div>
 					<div class="recipes__card__content">
-						<div>Broccoli and cranberry salad</div>
+						<div>Cranberry salad</div>
 						<div class="recipes__button" onclick="show__materials2()">Materials</div>
 						<div class="recipes__button" onclick="show__start2()">Start</div>
 					</div>
 				</div>
 				<div class="recipes__card">
-					<div class="recipes__card__img">blank
+					<div class="recipes__card__img">
+						<img height="100%" src="images/poached sliced beef in hot chili oil.png" alt="poached sliced beef in hot chili oil">
 					</div>
-					<div class="recipes__card__content">blank
+					<div class="recipes__card__content">
+						<div> Hot oil&chili beef</div>
+						<div class="recipes__button" onclick="show__materials3()">Materials</div>
+						<div class="recipes__button" onclick="show__start3()">Start</div>
 					</div>
 				</div>
 			</div>
@@ -108,11 +112,11 @@
 
 			<!--Only one recipe's material page showed-->
 			<div id="materials__recipe1">
-				<h1>Fried beef with onion</h1>
+				<h1>Boiled Fish with Pickled Cabbage </h1>
 				<h2>Materials:</h2>
 				<ul>
-					<li>Steak: 30g</li>
-					<li>Onion: 2</li>
+					<li>A fish</li>
+					<li>Pickled Cabbage:2</li>
 					<li>Vegetable oil</li>
 					<li>Salt</li>
 					<li>Suger</li>
@@ -123,14 +127,14 @@
 				<ul>
 					<li>Chopping knife</li>
 					<li>Chopping board</li>
-					<li>Pan (flat)</li>
+					<li>Pot</li>
 				</ul>
 				<div class="return__button" onclick="show__recipes()">&#8678;</div>
 				<div class="change__section__button" onclick="show__start1()">&#8680;</div>
 			</div>
 
 			<div id="materials__recipe2">
-				<h1>Broccoli and cranberry salad</h1>
+				<h1>Broccoli & cranberry salad</h1>
 				<h2>SALAD:</h2>
 				<ul>
 					<li>broccoli florets, cut into 1 - 1.5 cm  pieces: 5 cups</li>
@@ -151,13 +155,33 @@
 				<div class="return__button" onclick="show__recipes()">&#8678;</div>
 				<div class="change__section__button" onclick="show__start2()">&#8680;</div>
 			</div>
-
-
 			<!-- function needs to be added
 			<div id="materials__recipe2">
 			</div>
 			-->
+			<div id="materials__recipe3">
+				<h1>Poached sliced beef in hot chili oil</h1>
+				<h2>Materials:</h2>
+				<ul>
+					<li>150g beef</li>
+					<li>50g onion and 50g garlic</li>
+					<li>6g dried pepper</li>
+					<li>Chinese prickly ash 1g</li>
+					<li>2g salt</li>
+					<li>20g starch</li>
+					<li>20g bean paste</li>
+					<li>20g soy sauce</li>
 
+				</ul>
+				<h2>Utensils:</h2>
+				<ul>
+					<li>Chopping knife</li>
+					<li>Chopping board</li>
+					<li>Big pot</li>
+				</ul>
+				<div class="return__button" onclick="show__recipes()">&#8678;</div>
+				<div class="change__section__button" onclick="show__start3()">&#8680;</div>
+			</div>
 
 			<!--Start page for recipe 1-->
 			<div id="start__recipe1">
@@ -199,7 +223,7 @@
 				<div class="return__button" onclick="show__materials1()">&#8678;</div>
 			</div>
 
-			<!--Start page for recipe 1-->
+			<!--Start page for recipe 2-->
 			<div id="start__recipe2">
 				<h1>Broccoli and cranberry salad</h1>
 				<h2>Steps:</h2>
@@ -213,6 +237,40 @@
 				<div class="return__button" onclick="show__materials2()">&#8678;</div>
 			</div>
 
+		<!--Start page for recipe 3-->
+		<div id="start__recipe3">
+			<h1>Poached sliced beef in hot chili oil</h1>
+			<h2>Step 1:</h2>
+			<div>Slice the beef into 5cm thin slices and 3cm wide, put them in a bowl.
+				Refrigerate 1 hour.</div>
+			<div>Demo:</div>
+				<div class="start__demo">
+					<div class="start_demo_button">
+						<INPUT TYPE="button" value='pic' onclick="pic_layer_hot()" class="start_demo_button_card">
+						<INPUT TYPE="button" value='gif' onclick="gif_layer_hot()" class="start_demo_button_card">
+						<INPUT TYPE="button" value='vid' onclick="vid_layer_hot()" class="start_demo_button_card">
+						<INPUT TYPE="button" value='close' id="close_all_button_hot" onclick="close_all_hot()" class="close_demo_button_card">
+					</div>
+					<br>
+					<div class="pic_gif_vid_show">
+						<div class="pic_show">
+							<img src="images/cut_beef.PNG" id="pic_window_hot" style='display:none' width=95% alt="cut_fish.PNG">
+						</div>
+						<div class="gif_show">
+							<img src="images/cut_beef_gif.gif" id="gif_window_hot" style='display:none' width=95% alt="cut_fish_gif.gif">
+						</div>
+						<div class="vid_show">
+							<video width=95% controls id="vid_window_hot" style='display:none'>
+								<source src="images/cut_beef_video.mp4" type="video/mp4">
+								<source src="images/cut_beef_video.mp4.ogg" type="video/ogg">
+								<source src="images/cut_beef_video.mp4.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+				</div>
+
+			<div class="return__button" onclick="show__materials3()">&#8678;</div>
+		</div>
 
 		</div>
     <script src="js/js.js"></script>

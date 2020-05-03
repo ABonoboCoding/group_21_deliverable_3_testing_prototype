@@ -5,7 +5,7 @@ body {
 #homepage__layer {
 	display: block;
 }
-#recipes__layer, #techniques__layer, #materials__recipe1, #start__recipe1, #techniques_item1, #start__recipe2, #materials__recipe2 {
+#recipes__layer, #techniques__layer, #materials__recipe1, #start__recipe1, #techniques_item1, #start__recipe2, #materials__recipe2,#materials__recipe3,#start__recipe3 {
 	display: none;
 }
 /*body*/
