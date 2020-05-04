@@ -38,8 +38,9 @@
 						</div>
 					</div>
 				</div>
-
+				<!-- Setting button is removed currently
 				<div class="cookbook__setting" >&#9881;</div>
+				-->
 			</div>
 
 			<div id="recipes__layer">
@@ -116,10 +117,9 @@
 				<h2>Materials:</h2>
 				<ul>
 					<li>A fish</li>
-					<li>Pickled Cabbage:2</li>
-					<li>Vegetable oil</li>
+					<li>Pickled Cabbage: 2</li>
 					<li>Salt</li>
-					<li>Suger</li>
+					<li>Sugar</li>
 					<li>Pepper</li>
 					<li>Vegetable oil</li>
 				</ul>
@@ -219,8 +219,8 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="return__button" onclick="show__materials1()">&#8678;</div>
+				<div class="backtoRecipes_button" onclick="show__recipes()">Recipes</div>
 			</div>
 
 			<!--Start page for recipe 2-->
@@ -235,44 +235,47 @@
 				</div>
 
 				<div class="return__button" onclick="show__materials2()">&#8678;</div>
+				<div class="backtoRecipes_button" onclick="show__recipes()">Recipes</div>
 			</div>
 
 		<!--Start page for recipe 3-->
-		<div id="start__recipe3">
-			<h1>Poached sliced beef in hot chili oil</h1>
-			<h2>Step 1:</h2>
-			<div>Slice the beef into 5cm thin slices and 3cm wide, put them in a bowl.
-				Refrigerate 1 hour.</div>
-			<div>Demo:</div>
-				<div class="start__demo">
-					<div class="start_demo_button">
-						<INPUT TYPE="button" value='pic' onclick="pic_layer_hot()" class="start_demo_button_card">
-						<INPUT TYPE="button" value='gif' onclick="gif_layer_hot()" class="start_demo_button_card">
-						<INPUT TYPE="button" value='vid' onclick="vid_layer_hot()" class="start_demo_button_card">
-						<INPUT TYPE="button" value='close' id="close_all_button_hot" onclick="close_all_hot()" class="close_demo_button_card">
+			<div id="start__recipe3">
+				<h1>Poached sliced beef in hot chili oil</h1>
+				<h2>Step 1:</h2>
+				<div>Slice the beef into 5cm thin slices and 3cm wide, put them in a bowl.
+					Refrigerate 1 hour.</div>
+				<div>Demo:</div>
+					<div class="start__demo">
+						<div class="start_demo_button">
+							<INPUT TYPE="button" value='pic' onclick="pic_layer_hot()" class="start_demo_button_card">
+							<INPUT TYPE="button" value='gif' onclick="gif_layer_hot()" class="start_demo_button_card">
+							<INPUT TYPE="button" value='vid' onclick="vid_layer_hot()" class="start_demo_button_card">
+							<INPUT TYPE="button" value='close' id="close_all_button_hot" onclick="close_all_hot()" class="close_demo_button_card">
+						</div>
+						<br>
+						<div class="pic_gif_vid_show">
+							<div class="pic_show">
+								<img src="images/cut_beef.PNG" id="pic_window_hot" style='display:none' width=95% alt="cut_fish.PNG">
+							</div>
+							<div class="gif_show">
+								<img src="images/cut_beef_gif.gif" id="gif_window_hot" style='display:none' width=95% alt="cut_fish_gif.gif">
+							</div>
+							<div class="vid_show">
+								<video width=95% controls id="vid_window_hot" style='display:none'>
+									<source src="images/cut_beef_video.mp4" type="video/mp4">
+									<source src="images/cut_beef_video.mp4.ogg" type="video/ogg">
+									<source src="images/cut_beef_video.mp4.webm" type="video/webm">
+								</video>
+							</div>
+						</div>
 					</div>
-					<br>
-					<div class="pic_gif_vid_show">
-						<div class="pic_show">
-							<img src="images/cut_beef.PNG" id="pic_window_hot" style='display:none' width=95% alt="cut_fish.PNG">
-						</div>
-						<div class="gif_show">
-							<img src="images/cut_beef_gif.gif" id="gif_window_hot" style='display:none' width=95% alt="cut_fish_gif.gif">
-						</div>
-						<div class="vid_show">
-							<video width=95% controls id="vid_window_hot" style='display:none'>
-								<source src="images/cut_beef_video.mp4" type="video/mp4">
-								<source src="images/cut_beef_video.mp4.ogg" type="video/ogg">
-								<source src="images/cut_beef_video.mp4.webm" type="video/webm">
-							</video>
-						</div>
-					</div>
-				</div>
+				<div class="return__button" onclick="show__materials3()">&#8678;</div>
+				<div class="backtoRecipes_button" onclick="show__recipes()">Recipes</div>
 
-			<div class="return__button" onclick="show__materials3()">&#8678;</div>
+			</div>
+
 		</div>
 
-		</div>
     <script src="js/js.js"></script>
   </body>
 </html>

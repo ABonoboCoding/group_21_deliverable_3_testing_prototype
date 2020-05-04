@@ -5,8 +5,10 @@ function show__homepage() {
   document.getElementById("techniques__layer").style.display = "none";
   document.getElementById("techniques_item1").style.display = "none";
   document.getElementById("materials__recipe1").style.display = "none";
+  document.getElementById("materials__recipe2").style.display = "none";
   document.getElementById("materials__recipe3").style.display = "none";
   document.getElementById("start__recipe1").style.display = "none";
+  document.getElementById("start__recipe2").style.display = "none";
   document.getElementById("start__recipe3").style.display = "none";
   document.getElementById("homepage__layer").style.display = "block";
 }
@@ -18,6 +20,7 @@ function show__recipes() {
   document.getElementById("materials__recipe2").style.display = "none";
   document.getElementById("materials__recipe3").style.display = "none";
   document.getElementById("start__recipe1").style.display = "none";
+  document.getElementById("start__recipe2").style.display = "none";
   document.getElementById("start__recipe3").style.display = "none";
   document.getElementById("recipes__layer").style.display = "block";
 }
@@ -25,8 +28,10 @@ function show__techniques() {
   document.getElementById("homepage__layer").style.display = "none";
   document.getElementById("recipes__layer").style.display = "none";
   document.getElementById("materials__recipe1").style.display = "none";
+  document.getElementById("materials__recipe2").style.display = "none";
   document.getElementById("materials__recipe3").style.display = "none";
   document.getElementById("start__recipe1").style.display = "none";
+  document.getElementById("start__recipe2").style.display = "none";
   document.getElementById("start__recipe3").style.display = "none";
   document.getElementById("techniques_item1").style.display = "none";
   document.getElementById("techniques__layer").style.display = "block";
